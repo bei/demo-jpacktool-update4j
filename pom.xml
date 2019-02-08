@@ -1,0 +1,36 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>jpackager-update4j-maven-example</groupId>
+  <artifactId>jpackager-update4j-maven-example</artifactId>
+  <version>1.0.0</version>
+  <packaging>pom</packaging>
+
+  <profiles>
+    <profile>
+      <id>jpacktool</id>
+      <activation>
+	<activeByDefault>false</activeByDefault>
+      </activation>
+      <modules>
+	<module>jlink-jpackager-maven-plugin</module>
+	<module>update4j</module>
+	<module>jpacktool</module>
+      </modules>
+    </profile>
+
+    <profile>
+      <id>demo</id>
+      <activation>
+	<activeByDefault>true</activeByDefault>
+      </activation>
+      <modules>  
+	<module>demo-bootstrap</module>
+	<module>demo-business</module>
+	<module>demo-pack</module>
+      </modules>
+    </profile>
+  </profiles>
+  
+</project>

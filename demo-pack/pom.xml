@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>net.agilhard.jpacktool.demo</groupId>
+  <artifactId>demo-pack</artifactId>
+  <version>1.0.0-SNAPSHOT</version>
+  <name>demo-pack</name>
+
+  <packaging>jpacktool-generic</packaging>
+
+  <build>
+    <plugins>
+      <plugin>
+	<groupId>net.agilhard.maven.plugins</groupId>
+	<artifactId>jpacktool-maven-plugin</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
+        <extensions>true</extensions>
+
+        <configuration>
+	  <verbose>true</verbose>
+	  <businessGroupId>${project.groupId}</businessGroupId>
+	  <businessArtifactId>demo-business</businessArtifactId>
+	  <businessVersion>${project.version}</businessVersion>
+	  <bootstrapGroupId>${project.groupId}</bootstrapGroupId>
+	  <bootstrapArtifactId>demo-bootstrap</bootstrapArtifactId>
+	  <bootstrapVersion>${project.version}</bootstrapVersion>
+	  <businessBaseUri>http://localhost:8080/demo/business</businessBaseUri>
+	  <businessBasePath>demo-business</businessBasePath>
+	  <bootstrapBaseUri>http://localhost:8080/demo/business</bootstrapBaseUri>
+	  <bootstrapBasePath>demo/bootstrap</bootstrapBasePath>
+	  <bootstrapMainModule>org.update4j.demo.bootstrap</bootstrapMainModule>
+	  <bootstrapMainClass>org.update4j.demo.bootstrap.JavaFxDelegate</bootstrapMainClass>
+
+	  <baseUri>${jpacktool.bootstrap.baseUri}</baseUri>
+	  <basePath>${jpacktool.bootstrap.basePath}</basePath>
+	</configuration>
+      </plugin>
+    </plugins>
+  </build>
+  
+</project>

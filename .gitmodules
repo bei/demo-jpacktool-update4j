@@ -1,0 +1,15 @@
+[submodule "demo-business"]
+	path = demo-business
+	url = https://github.com/bei/demo-business.git
+[submodule "demo-bootstrap"]
+	path = demo-bootstrap
+	url = https://github.com/bei/demo-bootstrap.git
+[submodule "jpacktool"]
+	path = jpacktool
+	url = https://github.com/agilhard-oss/jpacktool.git
+[submodule "jlink-jpackager-maven-plugin"]
+	path = jlink-jpackager-maven-plugin
+	url = https://github.com/agilhard-oss/jlink-jpackager-maven-plugin.git
+[submodule "update4j"]
+	path = update4j
+	url = https://github.com/update4j/update4j.git
