@@ -29,10 +29,7 @@ demo-pack/target/maven-jpacktool/build/demo-business-jpacktool/demo-business-jpa
 and the ZIP file for the Demo Business Application to put onto the localhost
 Webserver running on port 8080 can be found at ...
 
-demo-pack/target/maven-jpacktool/build/demo-business-jpacktool/demo-business-jpacktool-jlink/target/demo-business-jpacktool-jlink-1.0.0-SNAPSHOT.zip 
-
-demo-pack/target/maven-jpacktool/build/demo-business-jpacktool/demo-business-jpacktool-jlink/target/demo-business-jpacktool-jlink-1.0.0-SNAPSHOT.zip 
-
+demo-pack/target/demo-business-jpacktool-jlink-1.0.0-SNAPSHOT.zip 
 
 
 
